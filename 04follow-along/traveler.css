@@ -50,13 +50,19 @@ main {
     padding: 1rem 10px;
 }
 
+main p {
+    font-size: 1rem;
+}
+
 main h1 {
-    color: #B40412;
+    padding: 0rem;
+    margin: 0rem;
 }
 
 main h2 {
     color: #024873;
     margin-bottom: 0.2rem;
+    padding-top: 0rem;
 }
 
 main p {
