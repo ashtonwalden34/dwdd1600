@@ -95,6 +95,39 @@ main ol li {
     font-size: 1rem;
 }
 
+/* index images */
+figure.logo{
+    margin: 0 0 0 10px;
+    width: 40%;
+    float: right;
+}
+
+figure.logo img {
+    width: 100%;
+    height: auto;
+}
+
+figure.logo figcaption {
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+/* gallery stuff here */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: darkgray;
+}
 
 
 /* Footer */
@@ -106,6 +139,7 @@ footer {
     text-align: center;
     font-size: 0.7rem;
     line-height: 0.7rem;
+    clear: both;
 }
 
 footer p {
