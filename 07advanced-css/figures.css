@@ -198,7 +198,8 @@ main dl dd {
     float: right;
 } */
 .hero {
-    width: 100% height auto;
+    width: 100%;
+    height: auto;
 }
 
 figure.logo img {
