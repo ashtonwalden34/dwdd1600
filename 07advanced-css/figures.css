@@ -1,0 +1,343 @@
+* {box-sizing: border-box
+    ;}
+
+body {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  background-color: white;
+}
+
+/* Header */
+header {
+    /* background-color: darkgray; */
+    background-image: linear-gradient(to bottom, red, black);
+    /* padding: 1rem; */
+    color: white;
+    text-align: center;
+    padding: 1rem 2vw;
+    display: flex;
+}
+
+header span {
+    margin: 0 0 0 10px;
+    font-weight: 700;
+    font-size: 2.0rem;
+}
+
+header p {
+    margin: 0;
+}
+
+header img {
+    display: flex;
+
+}
+
+/* Nav */
+
+/* small screen Nav */
+@media only screen and (max-width: 800px) {
+    nav {
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 0.12rem 10px;
+        }
+
+    nav ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        /* display: flex; */
+    }
+
+    nav li {
+        padding: 0.25rem 0 0.25rem 0;
+        /* width: 80%; */
+    }
+
+    nav li a {
+        text-align: center;
+        display: block;
+        color: white;
+        font-weight: 400;
+        padding: 1rem 2.5rem;
+        font-size: 1.65rem;
+        margin-right: 0.25rem;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    nav ul li.active a {
+        background-color: red;
+        color: black;
+        padding: 1rem 2.5rem;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    nav ul li a:hover {
+        background-color: gray;
+        padding: 1rem 2.5rem;
+        color: red; 
+        border: 1px solid red;
+        border-radius: 10px;
+    }
+
+}
+
+/* large screen Nav */
+@media only screen and (min-width: 801px) {
+    nav {
+        background-color: black;
+        color: white;
+        padding: 1.2rem 10px;
+    }
+
+    nav ul {
+        padding: 0.2rem;
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav li a {
+        color: white;
+        font-weight: 400;
+        padding: 1rem 2.5rem;
+        font-size: 1.2rem;
+        margin-right: 0.25rem;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    nav ul li.active a {
+        background-color: red;
+        color: black;
+        padding: 1rem 2.5rem;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    nav ul li a:hover {
+        background-color: gray;
+        padding: 1rem 2.5rem;
+        color: red; 
+        border: 1px solid red;
+        border-radius: 10px;
+    }
+}
+
+
+
+/* main */
+main {
+    padding: 1rem 3rem;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+main h2.roster-tag {
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: underline;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+main ol, ul {
+    list-style-position: inside;
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 0;
+    width: fit-content;
+}
+
+main ul li, ol li {
+    line-height: 1.6;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    display: list-item;
+}
+
+/* main ul li {
+    line-height: 150%;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    text-align: center;
+} */
+
+main dl dt {
+    font-size: 1.25rem;
+    background-color: gold;
+}
+
+main dl dd {
+    font-size: 1rem;
+}
+
+/* main ol {
+    list-style-position: inside;
+    text-align: left;
+    margin: 0 auto;
+} */
+
+/* main ol li {
+    line-height: 150%;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    text-align: center;
+} */
+
+/* index images */
+/* figure.logo{
+    margin: 0 0 0 10px;
+    width: 40%;
+    float: right;
+} */
+.hero {
+    width: 100% height auto;
+}
+
+figure.logo img {
+    width: 100%;
+    height: auto;
+}
+
+figure.logo figcaption {
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+/* gallery stuff here */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: darkgray;
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px red;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form fieldset {
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.form legend {
+    margin: 0.5rem;
+    color: red;
+}
+
+.form label {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+}
+
+.form label, .form select, .form [type=text], .form [type=tel], .form [type=email], .form radio, .form textarea {
+    display: block;
+}
+
+.form [type=text], .form [type=tel], .form [type=email], .form select, .form textarea {
+    border: solid 1px black;
+    padding: 0.5rem;
+    width: 300px;
+    border-radius: 10px;
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+}
+
+.form textarea {
+    height: 10rem;
+}
+
+.form :required {
+    background-color: darkgray;
+    border: 1px solid red;
+}
+
+.form [type=submit] {
+    background-color: darkgray;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: black;
+    margin: 1rem 0 0 1vw;
+}
+
+/* Thanks page */
+.thanks {
+    text-align: center;
+}
+
+.thanks h1 {
+    margin-bottom: 0;
+    vertical-align: center;
+    font-size: 2.5rem;
+}
+
+.thanks h2 {
+    padding: 0;
+    margin: 0;
+    color: red;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+    clear: both;
+}
+
+footer p {
+    margin: 0.1rem;
+    padding-bottom: 0.2rem;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: black;
+    border: 1px solid white;
+    background-color: red;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
